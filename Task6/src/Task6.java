@@ -28,11 +28,11 @@ public class Task6 {
         }else{
 
             maximum = b;
-        }
 
-        if(c > maximum){
+            if(c > maximum){
 
-            maximum = c;
+                maximum = c;
+            }
         }
 
         return maximum;
