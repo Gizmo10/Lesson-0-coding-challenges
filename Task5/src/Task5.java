@@ -2,14 +2,22 @@ public class Task5 {
 
     public static void main(String [] args){
 
+        double area;
         /* Testing the function with various arguments*/
-        areaOfATriangle(1,2,3);
-        areaOfATriangle(2.3,3,4);
-        areaOfATriangle(0,1,2);
-        areaOfATriangle(-1,3,9);
+        area = computeAreaOfATriangle(1,2,3);
+        System.out.println(area);
+
+        area = computeAreaOfATriangle(2.3,3,4);
+        System.out.println(area);
+
+        area = computeAreaOfATriangle(0,1,2);
+        System.out.println(area);
+
+        area = computeAreaOfATriangle(-1,3,9);
+        System.out.println(area);
     }
 
-    public static double areaOfATriangle(double side1,double side2,double side3){
+    public static double computeAreaOfATriangle(double side1,double side2,double side3){
 
         //If any of the parameters is negative
         if(side1 < 0 || side2 < 0 || side3 < 0){
