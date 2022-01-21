@@ -15,32 +15,18 @@ public class Task9 {
 
     public static void printVowelsInWord(String word){
 
-        Set<Character> vowels = new HashSet<>();
-
-        if(word.length() <= 0){
-
-            System.out.println("The String is empty.");
-        }else{
-
-            word = word.toLowerCase();
-
-            for(int i = 0;i < word.length();i++){
-
-                char c = word.charAt(i);
-
-                if(c == 'a' ||c == 'e' ||c == 'i' ||c == 'o' ||c == 'u'){
-
-                    vowels.add(c);
-                }
-            }
-        }
+        Set<Character> vowels = new HashSet<>(getVowels(word));
 
         //keep track of number of vowels printed
         int count = 0;
-
-        System.out.print("Vowels:");
-
         Iterator itr = vowels.iterator();
+
+        //Print an empty line if we have no vowels
+        System.out.print("Vowels:");
+        if(!itr.hasNext()){
+
+            System.out.println(" ");
+        }
 
         while(itr.hasNext()){
             //When we are not on the last vowel
@@ -53,6 +39,30 @@ public class Task9 {
                 System.out.println(" " + itr.next() + ".");
             }
         }
+    }
 
+    //The method finds all the vowels
+    public static Set<Character> getVowels(String word) {
+
+        Set<Character> vowels = new HashSet<>();
+
+        if (word.length() <= 0) {
+
+            return vowels;
+        } else {
+
+            word = word.toLowerCase();
+
+            for (int i = 0; i < word.length(); i++) {
+
+                char c = word.charAt(i);
+
+                if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
+
+                    vowels.add(c);
+                }
+            }
+        }
+        return vowels;
     }
 }
