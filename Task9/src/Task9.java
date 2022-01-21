@@ -10,11 +10,13 @@ public class Task9 {
         printVowelsInWord(" ");
         printVowelsInWord("wildebees");
         printVowelsInWord("RECREATIONAL");
+        printVowelsInWord("SUstAinAble");
 
     }
 
     public static void printVowelsInWord(String word){
 
+        //See getVowels(String w) method below this one
         Set<Character> vowels = new HashSet<>(getVowels(word));
 
         //keep track of number of vowels printed
@@ -50,7 +52,7 @@ public class Task9 {
 
             return vowels;
         } else {
-
+            //The word is made lowercase for comparison
             word = word.toLowerCase();
 
             for (int i = 0; i < word.length(); i++) {
