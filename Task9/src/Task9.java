@@ -11,6 +11,7 @@ public class Task9 {
         printVowelsInWord("wildebees");
         printVowelsInWord("RECREATIONAL");
         printVowelsInWord("SUstAinAble");
+        printVowelsInWord("Had");
 
     }
 
@@ -24,10 +25,15 @@ public class Task9 {
         Iterator itr = vowels.iterator();
 
         //Print an empty line if we have no vowels
-        System.out.print("Vowels:");
-        if(!itr.hasNext()){
+        if(vowels.size() == 0){
 
-            System.out.println(" ");
+            System.out.println("Vowel: ");
+        }else if(vowels.size() == 1){
+
+            System.out.print("Vowel: ");
+        }else{
+
+            System.out.print("Vowels: ");
         }
 
         while(itr.hasNext()){
