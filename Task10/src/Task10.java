@@ -44,7 +44,7 @@ public class Task10 {
     public static Set<Character> getCommonChars(String s1,String s2){
 
         Set<Character> commonCharacters = new HashSet<>();
-        //make the lowercase to compare easier
+        //make the strings lowercase to compare easier
         s1 = s1.toLowerCase();
         s2 = s2.toLowerCase();
 
