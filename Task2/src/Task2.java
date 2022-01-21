@@ -2,15 +2,15 @@ public class Task2 {
 
     public static void main(String [] args){
 
-        int x = 1 + 1 * 2;
-        int y = (1 + 1) * 2;
-        int z = 1 + (1 * 2);
-        int a = 1 + 1 * 2 / 2;
-        int b = (1 + 1 * 2) / 2;
+        double x = 1 + 1 * 2;
+        double y = (1 + 1) * 2;
+        double z = 1 + (1 * 2);
+        double a = 1 + 1 * 2 / 2;
+        double b = (1 + 1 * 2) / 2.0;
 
-        int [] arrayOfIntegers = {x,y,z,a,b};
+        double [] arrayOfIntegers = {x,y,z,a,b};
 
-        for(int i:arrayOfIntegers){
+        for(double i:arrayOfIntegers){
 
             System.out.println(i);
         }
