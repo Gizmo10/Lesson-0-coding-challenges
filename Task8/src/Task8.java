@@ -6,7 +6,13 @@ public class Task8 {
         int [] arr = {1,0,100,60,30,-53,9000};
 
         for(int number: arr){
-            convertToHoursAndMinutes(number);
+
+            if(number < 0){
+
+                System.out.println("Incorrect input: " + number);
+            }else {
+                convertToHoursAndMinutes(number);
+            }
         }
     }
 
