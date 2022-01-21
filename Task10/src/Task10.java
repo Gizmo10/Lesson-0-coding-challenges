@@ -53,6 +53,7 @@ public class Task10 {
 
                 if(s1.charAt(i) == s2.charAt(j)){
                     commonCharacters.add(s1.charAt(i));
+                    //found common character and inner loop must exit
                     j = s2.length();
                 }
             }
